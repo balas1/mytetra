@@ -1,0 +1,41 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0//EN" "http://www.w3.org/TR/REC-html40/strict.dtd">
+<html><head><meta name="qrichtext" content="1" /><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><style type="text/css">
+p, li { white-space: pre-wrap; }
+</style></head><body style=" font-family:'DejaVu Sans'; font-size:10pt; font-weight:400; font-style:normal;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">Во FreeBSD существует огромное количество средств для получения информации о функционировании системы. Однако некоторые из них спрятаны немного нетривиально.</p>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"></p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">Информация о дисках</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">mount - показывает смонтированные подразделы и флаги из монтирования</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">df - показывает смонтированные подразделы, их размер и свободное место на них</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">fdisk /dev/ad0 - показывает информацию о диске ad0 и разделах на нем</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">disklabel /dev/ad0s1 - показывает список подразделов в первом разделе диска ad0</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">swapinfo - показывает список подразделов свопинга на дисках и их использование</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">fstat - показывает список открытых файлов (имена файлов не выводятся)</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">pstat -f - выводит список открытых файлов (имена файлов не выводятся)</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">systat -vmstat n - каждые n секунд выводит количество транзакций с диском в секунду, объем записанных/считанных данных на диск в секунду, средний размер транзакции и процент времени в течение которого диск был занят работой.</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">iostat - выводит информацию, аналогичную systat -vmstat, но не выводит занятости диска по времени и может выводить среднюю статистику с момента загрузки.</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">vmstat - выводит количество операций на диске в секунду</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">/stand/sysinstall - можно посмотреть и изменить разметку диска и монтирование</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">less /etc/fstab - таблица монтирования при загрузке</p>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"></p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">Информация о процессоре и памяти</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">systat -vmstat n - вывод показателей загрузки (number of jobs in the run queue averaged over 1, 5 and 15 min), состояния памяти (в страницах), количества процессов в группах, количество вызовов специальных функций ядра (traps, interrupts, system calls, network software interrupts), использование процессора, трансляции имен, активность свопа, прерывания, а также информацию по использованию диска (см)</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">top - аналогичная информация в сокращенном виде + использование памяти и свопа в мегабайтах, список процессов, отсортированных по использованию процессора.</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">ps afx - список запущенных процессов и время процессора на каждый</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">Информация о сети</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">ifconfig - список сетевых интерфейсов с ip-адресами, масками, mac-адресами, типами карт и их статусами (названия карточек можно посмотреть в файле конфигурации ядра)</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">systat -ifstat n - объем трафика за n секунд на всех сетевых интерфейсах</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">netstat - вывод активных сетевых соединений (сокетов)</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">systat -netstat n - аналог netstat в реальном времени</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">systat -ip n - таблица IP-пакетов и ошибок по типам за n секунд</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">systat -tcp n - таблица TCP-пакетов и ошибок по типам за n секунд</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">systat -icmp n - таблица ICMP-пакетов и ошибок по типам за n секунд</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">netstat -ibt - список интерфейсов, разбитых по ip-адресам (!) с объемом трафика на каждом, количеством ошибок, коллизий, значением watchdog-таймера</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">netstat -r - таблица маршрутизации</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">arp -a - таблица ARP</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">tcpdump -i rl0 host 192.168.61.20 and port 80 - сниффер пакетов на интерфейсе rl0, фильтрующий пакеты, содержащие адрес 192.168.61.20 и порт 80</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">trafshow -i rl0 - программа для сортировки и вывода сетевых потоков (устанавливается дополнительно пакетом или из портов)</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">Службы времени</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">date - выводит текущее время и дату</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">w - выводит, сколько времени назад система загрузилась и залогиненных пользователей</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">last - выводит историю перезагрузок и входов пользователей</p></body></html>

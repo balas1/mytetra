@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mytetradoc>
+<root>
+ <format version="1" subversion="1"/>
+ <content>
+  <node id="1" name="Работа">
+   <recordtable>
+    <record dir="0000000001" url="" tags="MyTetra, Qt" author="Xintrea" id="1" ctime="20081210124656" name="Welcome to MyTetra!" file="text.html"/>
+   </recordtable>
+   <node id="3765" name="Заметки">
+    <recordtable>
+     <record dir="1316617924fm3mrxs5wv" crypt="0" url="" tags="PHPList" author="" id="1316617924rigcga2m0i" ctime="20110921191204" name="Обновление PHPList" file="text.html"/>
+    </recordtable>
+   </node>
+  </node>
+  <node id="3768" name="Шпаргалки">
+   <recordtable>
+    <record dir="0000003249" url="http://www.opennet.ru/base/net/exim_options.txt.html" tags="exim, очередь" author="" id="3798" ctime="20101203182029" name="Exim" file="text.html"/>
+   </recordtable>
+   <node id="3769" name="FreeBSD">
+    <recordtable>
+     <record dir="0000003237" url="http://allwork.kiev.ua/freebds-shpargalki" tags="Сеть, очередность, запуск" author="" id="3771" ctime="20101113144029" name="Сеть" file="text.html"/>
+     <record dir="0000003238" url="http://allwork.kiev.ua/freebds-shpargalki" tags="RAID" author="" id="3773" ctime="20101113144322" name="Программный RAID" file="text.html"/>
+     <record dir="0000003247" url="" tags="" author="" id="3793" ctime="20101119183214" name="Полезные команды" file="text.html"/>
+     <record dir="0000003251" url="http://blog.amigas.ru/?p=750" tags="php, apache," author="" id="3804" ctime="20110524121010" name="apc_fcntl_unlock failed: in Unknown on line 0" file="text.html"/>
+     <record dir="0000003254" url="http://semenushkin.ru/2010/02/19/%D0%BC%D0%BE%D0%BD%D0%B8%D1%82%D0%BE%D1%80%D0%B8%D0%BD%D0%B3-%D1%81%D0%B8%D1%81%D1%82%D0%B5%D0%BC%D1%8B-%D0%BF%D0%BE%D0%B4-freebsd/" tags="" author="" id="3810" ctime="20110712133609" name="Мониторинг системы под FreeBSD" file="text.html"/>
+     <record dir="0000003255" url="http://www.yaap.info/page/freebsd-sredstva-monitoringa" tags="freebsd, мониторинг" author="" id="3812" ctime="20110712133817" name="Еще мониторинг" file="text.html"/>
+     <record dir="1320659772zi6wagtssa" crypt="0" url="" tags="icu, зависимости, порты" author="" id="1320659772nba3x9oig1" ctime="20111107135612" name="Принудительное обновление порта с зависимостями" file="text.html"/>
+     <record dir="13206702113ofu8sjcaz" crypt="0" url="http://wiki.lblss.ru/FreeBSD/%D0%9F%D1%80%D0%BE%D0%B1%D0%BB%D0%B5%D0%BC%D1%8B_%D1%81_%D0%BE%D0%B1%D0%BD%D0%BE%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D1%8F%D0%BC%D0%B8" tags="порты" author="" id="1320670211dx1pu1pkfe" ctime="20111107165011" name="&quot;Лишние&quot; порты" file="text.html"/>
+     <record dir="1325151678pllxnm665g" crypt="0" url="" tags="восстановление системы" author="Я" id="13251516781e3hvu77mp" ctime="20111229134118" name="Dump/restore" file="text.html"/>
+    </recordtable>
+   </node>
+   <node id="3774" name="Команды">
+    <recordtable>
+     <record dir="0000003239" url="http://forum.ubuntu.ru/index.php?topic=14535.15" tags="" author="" id="3776" ctime="20101113145151" name="All" file="text.html"/>
+     <record dir="0000003240" url="http://forum.ubuntu.ru/index.php?topic=14535.15" tags="DEB, пакеты, apt" author="" id="3778" ctime="20101113145241" name="Команды dpkg и apt" file="text.html"/>
+     <record dir="0000003241" url="http://forum.ubuntu.ru/index.php?topic=14535.15" tags="cat, sed, sort, awk" author="" id="3780" ctime="20101113145414" name="Манипуляции с текстом" file="text.html"/>
+     <record dir="0000003242" url="http://www.f-notes.info/doku.php?id=linux:linux_command" tags="" author="" id="3782" ctime="20101113150056" name="Полезные команды Linux" file="text.html"/>
+     <record dir="0000003246" url="http://www.ibm.com/developerworks/ru/library/au-spunix_pipeviewer/index.html?S_TACT=105AGX99&amp;S_CMP=GR01" tags="pv, pipe, viewer" author="" id="3791" ctime="20101119164921" name="Pipe Viewer" file="text.html"/>
+    </recordtable>
+   </node>
+   <node id="3783" name="Webalizer">
+    <recordtable>
+     <record dir="0000003243" url="http://www.brim.ru/support/statistic/" tags="" author="" id="3785" ctime="20101113151438" name="Отчеты Webalizer" file="text.html"/>
+    </recordtable>
+   </node>
+   <node id="3788" name="Сервисы в офисы">
+    <recordtable>
+     <record dir="0000003245" url="" tags="sabre" author="Балашов" id="3789" ctime="20101117131959" name="Update MySabre" file="text.html"/>
+    </recordtable>
+   </node>
+   <node id="3794" name="Linux">
+    <recordtable>
+     <record dir="0000003248" url="http://debaday.ru/debaday/logcheck" tags="logcheck" author="" id="3796" ctime="20101126141318" name="Пример конфигурации logcheck" file="text.html"/>
+    </recordtable>
+   </node>
+   <node id="3800" name="Почта">
+    <recordtable>
+     <record dir="0000003250" url="http://www.sergeysl.ru/" tags="shared imap" author="http://www.sergeysl.ru/" id="3802" ctime="20110318134932" name="Использование общих папок на сервере Courier-IMAP" file="text.html"/>
+     <record dir="0000003252" url="http://www.opennet.ru/tips/info/545.shtml" tags="postfix, postqueue, postsuper" author="" id="3806" ctime="20110614185039" name="Postfix. Удаление письма из очереди" file="text.html"/>
+     <record dir="0000003253" url="http://sash-kan.blogspot.com/2008/04/exim.html" tags="exim, очередь" author="" id="3808" ctime="20110711180835" name="Exim. Памятка." file="text.html"/>
+     <record dir="13245535644p1tsban5m" crypt="0" url="" tags="" author="" id="1324553564qmrjfs68n5" ctime="20111222153244" name="проверка imap по telnet" file="text.html"/>
+    </recordtable>
+   </node>
+  </node>
+ </content>
+</root>
